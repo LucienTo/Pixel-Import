@@ -61,10 +61,6 @@ Known limitations, so none of these come as a surprise:
 - **No cropping.** Crop before importing, in whatever you already use.
 - **Output is capped at 256px** on the long side, and never exceeds the source's
   own resolution.
-- **The dialog is untested by machine.** Aseprite's scripting API cannot open a
-  window headlessly, so the conversion and placement code has a
-  [test suite](docs/DEVELOPING.md#development) but the window itself is checked
-  by eye.
 
 Found a bug, or want something it does not do?
 [Open an issue](../../issues).

@@ -281,8 +281,16 @@ so it exercises the actual API rather than a mock - which is the only way to
 catch the sort of thing collected under "Notes" below.
 
 The dialog itself cannot run headlessly: `Dialog{}` returns nil under `-b`. The
-suite therefore load-checks `ui.lua` and tests everything behind it, and the
-window has to be looked at by a human.
+suite therefore load-checks `ui.lua` - which catches syntax errors and
+undefined references, but no behavior - and tests everything behind it.
+
+That split is worth knowing before you go looking for a bug. Every layout fault
+this project has had was found by a human looking at the window, never by a
+test: Target splitting across three rows, a separator widget forcing a row
+break, the window snapping back to its default size whenever a widget was
+modified. Anything about *where a control sits or what it does when clicked*
+has no test coverage and cannot have any. Anything about what comes out of the
+conversion does, and should keep doing so.
 
 ## Packaging a release
 
