@@ -1,0 +1,16 @@
+{
+  "name": "pixelimport",
+  "displayName": "Pixel Import",
+  "description": "Import any image and convert it to editable pixel art, with a live preview and click-to-place onto the canvas.",
+  "version": "0.1.0",
+  "author": {
+    "name": "LucienTo"
+  },
+  "license": "MIT",
+  "categories": ["Scripts"],
+  "contributes": {
+    "scripts": [
+      { "path": "./main.lua" }
+    ]
+  }
+}

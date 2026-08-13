@@ -1,0 +1,9 @@
+# Written by the test suite on every run.
+tests/run.results.txt
+
+# Scratch files the tests create and delete; only present after a crash.
+tests/t_*.png
+
+# Packaged extension, built from the source in this repo.
+*.aseprite-extension
+*.zip
