@@ -4,7 +4,7 @@ An Aseprite extension that brings any image in as editable pixel art, with a
 live preview, without leaving the app.
 
 <p align="center">
-  <img src="docs/window.png"
+  <img src="docs/window.gif"
        alt="The Pixel Import window: an Import Image button and image dropdown, a live preview of the converted result on a checkerboard, the source and target sizes, a scale slider, and dropdowns for resampling, palette, position and placement, above a Place on Selected Keyframe button."
        width="420">
 </p>
